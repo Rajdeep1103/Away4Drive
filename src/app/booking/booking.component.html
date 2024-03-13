@@ -1,0 +1,29 @@
+
+
+<div class="backgroundimg">
+
+
+
+<div *ngIf="selectedCar" class="struct">
+    <div class="card p-4 selectCard">
+    <h2>Payment Details for {{ selectedCar.brand }} {{ selectedCar.model }}</h2>
+    <p>Price per Day: ${{ selectedCar.pricePerDay | number:'1.2-2' }}</p>
+    <p>Start Date: {{ startDate }}</p>
+    <p>End Date: {{ endDate }}</p>
+    <form>
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" name="startDate"  [(ngModel)]="startDate" required>
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" name="endDate"  [(ngModel)]="endDate" required>
+      <button type="button" style="background-color: #ff6a00;" (click)="calculateTotalPrice()">Calculate Total Price</button>
+      
+    </form>
+    <p>Total Price: ${{ totalPrice | number:'1.2-2' }}</p>
+    <form>
+        <button type="button"  style="background-color: #ff6a00;" (click)="proceedToPayment()" *ngIf="totalPrice > 0">Proceed to Payment</button>
+    </form>
+    </div>
+  </div>
+  
+</div>
+  

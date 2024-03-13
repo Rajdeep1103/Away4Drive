@@ -1,0 +1,62 @@
+<nav class="menu-container">   
+    <!-- burger menu -->
+    <input type="checkbox" aria-label="Toggle menu" />
+    <span></span>
+    <span></span>
+    <span></span>
+ 
+    <!-- logo -->
+    <a (click)="goToHome()" class="menu-logo">
+      <img src="../../assets/images/car logo.png" alt="My Awesome Website"/>
+ 
+ 
+
+    </a>
+ 
+    <!-- menu items -->
+    <div class="menu">
+      <ul>
+        <li>
+          <a (click)="goToHome()">
+            Home
+          </a>
+        </li>
+        <li>
+          <a (click)="goToCar()">
+            Car
+          </a>
+        </li>
+        <!-- <li>
+          <a (click)=" goToWishlist()">
+            Wishlist 
+          </a>
+        </li> -->
+        <li>
+          <a (click)=" goToAbout()">
+            About
+          </a>
+        </li>
+      </ul>
+      
+      <ul>
+        
+        <li>
+          <!-- Show this link when user is not logged in -->
+        
+          <a (click)="goToSignup()">
+            Sign-up
+          </a>
+        </li>
+         
+         <li>
+
+           <a class="nav-link" (click)="goToLogin()">Login</a>
+         </li>
+
+
+         
+      </ul>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+  <!-- <app-about></app-about> -->

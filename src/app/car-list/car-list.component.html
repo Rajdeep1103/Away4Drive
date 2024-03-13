@@ -1,0 +1,16 @@
+
+<div class="car_container">
+    <div *ngFor="let car of availableCars" class="car-item" >
+    
+      <img [src]="car.imageUrl" alt="{{ car.brand }} {{ car.model }}" />
+      <div class="car-details">
+        <div><strong>{{ car.brand }} {{ car.model }}</strong></div>
+        <div>Year: {{ car.year }}</div>
+        <div>Price per day: ${{ car.pricePerDay }}</div>
+        <!-- Add more details if needed -->
+        <!-- <button>Book car</button> -->
+      </div>
+      <button *ngIf="!car.isBooked" (click)="bookCar(car)" class="btn-1">Book Now</button>
+      
+      </div>
+</div>
