@@ -1,5 +1,11 @@
-
+<!-- 
 <div class="car_container">
+  <div class="container">
+     <form action="/search" method="GET">
+        <input type="text" class="search-input" name="q" placeholder="Search for brand ">
+         <button type="submit" class="search-button">Search</button>
+      </form>
+  </div>
     <div *ngFor="let car of availableCars" class="car-item" >
     
       <img [src]="car.imageUrl" alt="{{ car.brand }} {{ car.model }}" />
@@ -7,10 +13,30 @@
         <div><strong>{{ car.brand }} {{ car.model }}</strong></div>
         <div>Year: {{ car.year }}</div>
         <div>Price per day: ${{ car.pricePerDay }}</div>
-        <!-- Add more details if needed -->
-        <!-- <button>Book car</button> -->
+       
       </div>
       <button *ngIf="!car.isBooked" (click)="bookCar(car)" class="btn-1">Book Now</button>
       
       </div>
+</div> -->
+
+<div class="car_container">
+  <div class="container">
+     <form (submit)="searchCars($event)" method="GET">
+        <input type="text" class="search-input" name="q" [(ngModel)]="searchQuery" placeholder="Search for brand">
+         <button type="submit" class="search-button">Search</button>
+      </form>
+  </div>
+    <div *ngFor="let car of filteredCars" class="car-item">
+    
+      <img [src]="car.imageUrl" alt="{{ car.brand }} {{ car.model }}" />
+      <div class="car-details">
+        <div><strong>{{ car.brand }} {{ car.model }}</strong></div>
+        <div>Year: {{ car.year }}</div>
+        <div>Price per day: ${{ car.pricePerDay }}</div>
+      </div>
+      <button *ngIf="!car.isBooked" (click)="bookCar(car)" class="btn-1">Book Now</button>
+      
+    </div>
 </div>
+

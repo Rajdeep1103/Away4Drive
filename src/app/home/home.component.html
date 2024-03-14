@@ -3,10 +3,10 @@
         <div class="sliderItem">
             <!-- <img src="../../assets/images/BMW photo.avif" alt="" class="sliderImg"> -->
             <!-- <div class="sliderBg"></div> -->
-            <h1 class="sliderTitle">BMW<br> NEW<br> RIDE</h1>
+            <h1 class="sliderTitle">BMW<br> NEW<br> RIDE<br></h1>
             <!-- <h2 class="sliderPrice">Rs.3989</h2> -->
             <a (click)="goToHome()">
-                <button class="buyButton">BOOK NOW!</button>
+                <br><button routerLink="/cars" class="buyButton">BOOK NOW!</button>
             </a>
         </div>
         
@@ -15,9 +15,9 @@
  
 <div class="features">
     <div class="feature">
-        <img src="../../assets/images/pexels-mike-bird-.jpg" alt="" class="featureIcon">
+        <img src="../../assets/images/pexelsMikeBird-.jpg" alt="" class="featureIcon">
         <span class="featureTitle">FREE SHIPPING</span>
-        <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        <span class="featureDesc">Free shipping on all cars.</span>
     </div>
     <div class="feature">
         <img class="featureIcon" src="../../assets/img/return.png" alt="">
@@ -37,10 +37,10 @@
 </div>
  
 <div class="product" id="product">
-    <img src="../../assets/images/red ar.avif" alt="" class="productImg">
+    <img src="../../assets/images/redCar.avif" alt="" class="productImg">
     <div class="productDetails">
         <h1 class="productTitle">Dream</h1>
-        <h2 class="productPrice">Rs.2459</h2>
+        <h2 class="productPrice">$2459</h2>
         <p class="productDesc">Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias assumenda
             dolorum
             doloremque sapiente aliquid aperiam.</p>
@@ -49,24 +49,24 @@
             <div class="color"></div>
         </div>
        
-        <button class="productButton">BOK NOW!</button>
+        <button routerLink="/cars" class="productButton">BOK NOW!</button>
     </div>
    
 </div>
 <div class="gallery">
     <div class="galleryItem">
         <h1 class="galleryTitle">Be Yourself!</h1>
-        <img src="../../assets/images/be yourself car.avif?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        <img src="../../assets/images/beYourSelfcar.avif"
             alt="" class="galleryImg">
     </div>
     <div class="galleryItem">
-        <img src="../../assets/images/mirror click car.avif?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        <img src="../../assets/images/mirrorClickCar.avif"
             alt="" class="galleryImg">
         <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
     </div>
     <div class="galleryItem">
         <h1 class="galleryTitle">Just Do it!</h1>
-        <img src="../../assets/images/black look car.avif?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        <img src="../../assets/images/blackLookCar.avif"
             alt="" class="galleryImg">
     </div>
 </div>
@@ -79,8 +79,8 @@
         <h3 class="nsTitleSm">NEW LUXURY ARRIVALS</h3>
         <h1 class="nsTitle">New Dream CAR</h1>
         <h1 class="nsTitle">New Collection</h1>
-        <a (click)="goToHome()">
-            <button class="nsButton">CHOOSE YOUR CAR</button>
+        <a>
+            <button routerLink="/cars" class="nsButton">CHOOSE YOUR CAR</button>
         </a>
     </div>
     <div class="nsItem">
@@ -88,7 +88,7 @@
             alt="" class="nsImg">
     </div>
 </div>
-<footer>
+<!-- <footer>
     <div class="footerLeft">
         <div class="footerMenu">
             <h1 class="fMenuTitle">About Us</h1>
@@ -141,5 +141,42 @@
         <div class="footerRightMenu">
             <span class="copyright">©️ Rajdeep Thakur All rights reserved 2024.</span>
         </div>
+    </div>
+</footer> -->
+
+
+<footer class="bg-light text-center text-lg-start text-muted mt-5">
+    <section class="text-white d-flex justify-content-around align-items-center p-4 border-bottom bg-secondary">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto">
+            <h6 class="text-uppercase mb-4">
+              <b>Rent with Confidence</b>
+            </h6>
+            <p class="lh-5">
+              Explore the world on your terms with our premium car rental services. Whether it's a weekend getway or a cross-country adventure, we've got the perfect ride for you. With a wide selcetion of vehicles and unbeatable price, your journey starts here.
+            </p>
+          </div>
+  
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2">
+            <h6 class="text-uppercase mb-4">Services</h6>
+            <p><a href="" routerLink="/cars">About Us</a></p>
+            <p><a href="/src/app/car-list/" routerLink="/cars">car</a></p>
+            <p><a href="/src/app/home/">Contact Us</a></p>
+          </div>
+  
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
+            <h6 class="text-uppercase mb-4">Contact</h6>
+            <p><i class="fas fa-home me-2"></i> DLF Hyderabad, IN 50032</p>
+            <!-- <p><i class="fas fa-envelope me-3"></i> info@example.com</p> -->
+            <p><i class="fas fa-phone me-3"></i> +91 7085568255</p>
+            <p><i class="fas fa-print me-3"></i> +01 234 567 89</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <div class="text-center text-white bg-dark p-4" style="background-color: #050c1f;">
+      ©2024. Away4Drive All Rights Reserved
     </div>
 </footer>

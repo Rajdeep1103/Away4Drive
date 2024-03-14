@@ -23,13 +23,7 @@ export class NavbarComponent implements OnInit {
 
   constructor(private router: Router) {}
 
-  // get isLoggedIn(): boolean {
-  //   return this.authService.isAuthenticatedUser();
-  // }
-
-  // get username(): string | undefined {
-  //   return this.authService.getUsername();
-  // }
+ 
 
   ngOnInit(): void{
     // this.navbarService.isNavbarVisible$.subscribe((isVisible)=>{
@@ -40,9 +34,7 @@ export class NavbarComponent implements OnInit {
     // });
   }
   
-  // goToWishlist(): void {
-  //   this.router.navigate(['/wishlist']);
-  // }
+ 
 
 
 
@@ -67,12 +59,5 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['/about'])
   }
 
-  goToWishlist(){
-    this.router.navigate(['/wishlist'])
-  }
-
-  // logout(): void {
-  //   console.log("Logout Clicked");
-  //   this.navbarService.setNavbarVisibility(false);
-  // }
+  
 }

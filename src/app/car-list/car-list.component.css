@@ -9,6 +9,10 @@
     gap: 50px;
   }
   
+  .container{
+    text-align: center;
+
+  }
   
   .car-item {
     display: flex;
