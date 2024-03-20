@@ -1,4 +1,5 @@
 export interface Car {
+    price: any;
     carId: number;
     brand: string;
     model: string;
@@ -7,9 +8,7 @@ export interface Car {
     isAvailable: boolean;
     dateAdded: string;
     isBooked?: boolean;
-    imageUrl:string;
-    // isPaid?: boolean;
-    // You might want to use a Date type
-    // Other properties if needed
-  
+    imageUrl:string[
+      
+    ];
   }

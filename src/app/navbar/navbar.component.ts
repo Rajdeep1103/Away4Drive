@@ -1,8 +1,8 @@
 import { Component,inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-//import { WishlistService } from '../services/wishlist.service';
-// import { AuthService } from '../services/auth.service';
-//import { NavbarService } from '../services/navbar.service';
+import { AuthService } from '../services/auth.service';
+import { NgToastService } from 'ng-angular-popup';
+
 
 @Component({
   selector: 'app-navbar',
@@ -10,31 +10,29 @@ import { Router } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent implements OnInit {
-  ;
-  
 
-  // isNavbarVisible: boolean = true;
-
-  //router = inject(Router)
-  // WishlistService: any;
-  // wishlistItemCount: any;
-
-  // constructor(private navbarService: NavbarService){}
-
-  constructor(private router: Router) {}
+  status:boolean = false;
+  userName: any;
+  constructor(private router: Router) { 
+    
+  }
+  toast = inject(NgToastService)
+ authService = inject(AuthService);
 
  
 
   ngOnInit(): void{
-    // this.navbarService.isNavbarVisible$.subscribe((isVisible)=>{
-    //   this.isNavbarVisible = isVisible;
-    // });
-    // this.wishlistService.wishlistItems$.subscribe((wishlistItems) => {
-    //   this.wishlistItemCount = wishlistItems.length;
-    // });
+  
+    this.authService.getUserLoginStatus().subscribe({
+      next: (userLoginStatus)=> {this.status = userLoginStatus
+      console.log(this.status)}
+    })
+    this.authService.getUserLoginStatus().subscribe(status => {
+      this.status = status;
+    })
+   
   }
   
- 
 
 
 
@@ -59,5 +57,15 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(['/about'])
   }
 
-  
+  logout(){
+    this.status = false;
+    this.toast.success({
+      detail:"Logged Out",
+      summary:"Successful",
+      duration:2000,
+      position:"topCenter"
+    })
+    this.router.navigate(['/login']);
+  }
 }
+

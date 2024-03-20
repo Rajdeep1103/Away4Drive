@@ -64,6 +64,8 @@ export class CarListComponent implements OnInit {
   availableCars: Car[] = [];
   filteredCars: Car[] = [];
   searchQuery: string = '';
+  sortBy:string = '';
+
 
   constructor(private carService: CarService, private router: Router) {}
 
@@ -79,6 +81,16 @@ export class CarListComponent implements OnInit {
         }
       }
     );
+   
+  }
+
+  
+
+
+
+
+  viewDescription(car: Car): void {
+    this.router.navigate(['/car-details',car.carId]);
   }
 
   bookCar(car: Car): void {
@@ -90,6 +102,14 @@ export class CarListComponent implements OnInit {
     this.filteredCars = this.availableCars.filter(car => 
       car.brand.toLowerCase().includes(this.searchQuery.toLowerCase())
     );
+  }
+  sortCars(): void {
+    if (this.sortBy === 'priceLowToHigh') {
+      this.filteredCars.sort((a, b) => a.pricePerDay - b.pricePerDay);
+    } else if (this.sortBy === 'priceHighToLow') {
+      this.filteredCars.sort((a, b) => b.pricePerDay - a.pricePerDay);
+    }
+
   }
 }
 

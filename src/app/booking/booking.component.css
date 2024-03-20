@@ -50,7 +50,7 @@ form {
 
   .backgroundimg {
     margin: -65px;
-  background: url('../../assets/images/carroadspeed.jpg');
+  background: url('../../assets/images/backgroundold.webp');
   background-size: cover;
   background-position: center;
   height: 100vh; /* Adjust the height as needed */
@@ -66,11 +66,12 @@ form {
 }
 
 .selectCard {
-  /* Add styling for the card as needed */
+  
   margin: auto;
 }
 .card{
-  background-color: rgba(255, 255, 255, 0.6);
+ 
+  background-color: rgba(255,255,255, 0.1);
 }
 
   

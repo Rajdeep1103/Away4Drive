@@ -1,58 +1,63 @@
 <div class="slider">
     <div class="sliderWrapper">
         <div class="sliderItem">
-            <!-- <img src="../../assets/images/BMW photo.avif" alt="" class="sliderImg"> -->
-            <!-- <div class="sliderBg"></div> -->
+            
             <h1 class="sliderTitle">BMW<br> NEW<br> RIDE<br></h1>
-            <!-- <h2 class="sliderPrice">Rs.3989</h2> -->
+            <h1 class="sliderTitle1">IN HYDERABAD<br></h1>
+           
             <a (click)="goToHome()">
-                <br><button routerLink="/cars" class="buyButton">BOOK NOW!</button>
+                <br><button routerLink="/cars" class="buyButton ">BOOK NOW!</button>
             </a>
         </div>
         
     </div>
 </div>
+
  
 <div class="features">
     <div class="feature">
-        <img src="../../assets/images/pexelsMikeBird-.jpg" alt="" class="featureIcon">
-        <span class="featureTitle">FREE SHIPPING</span>
-        <span class="featureDesc">Free shipping on all cars.</span>
+        <img class="featureIcon" src="../../assets/images/searhCharSign.webp" alt="">
+        <span class="featureTitle" (click)="goTovehicleSelection()">VEHICLE SELECTION <br>AND AVAILABILITY</span>
+        <span class="featureDesc">Wide range of rental vehicles available with real-time availability updates.</span>
+    </div>    
+    <div class="feature">
+        <img class="featureIcon" src="../../assets/images/insurance.jpg" alt="">
+        <span class="featureTitle" (click)="goToInsurance()">INSURANCE AND <br>PROTECTION PLANS</span>
+        <span class="featureDesc">Comprehensive insurance coverage and<br> protection plans for your rental.</span>
     </div>
     <div class="feature">
-        <img class="featureIcon" src="../../assets/img/return.png" alt="">
-        <span class="featureTitle">30 DAYS RETURN</span>
-        <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        <img class="featureIcon" src="../../assets/images/vehicleInspectionColor.png" alt="">
+        <span class="featureTitle" (click)="goTovehicleInspection()">VEHICLE INSPECTION AND <br>CONDITION REPORTING</span>
+        <span class="featureDesc">Thorough vehicle inspection before and after each rental with detailed condition reports.</span>
     </div>
     <div class="feature">
-        <img class="featureIcon" src="../../assets/img/gift.png" alt="">
-        <span class="featureTitle">GIFT CARDS</span>
-        <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
-    </div>
-    <div class="feature">
-        <img class="featureIcon" src="../../assets/img/contact.png" alt="">
-        <span class="featureTitle">CONTACT US!</span>
+        <img class="featureIcon" src="../../assets/images/contactUs.png" alt="">
+        <span class="featureTitle" (click)="goTocontactUs()">CONTACT US!</span>
         <span class="featureDesc">Keep in touch via email and support system.</span>
     </div>
 </div>
  
 <div class="product" id="product">
     <img src="../../assets/images/redCar.avif" alt="" class="productImg">
+    
     <div class="productDetails">
-        <h1 class="productTitle">Dream</h1>
-        <h2 class="productPrice">$2459</h2>
-        <p class="productDesc">Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias assumenda
-            dolorum
-            doloremque sapiente aliquid aperiam.</p>
+        <h1 class="productTitle">Experience the euphoria of driving your dream car</h1>
+        <h2 class="productPrice">Starting from ₹1500</h2>
+        <p class="productDesc">Welcome to our car rental platform, where dreams meet reality! We
+            understand that everyone has their dream car - that one vehicle they've always dreamed of 
+            driving, but perhaps thought was out of reach. At our car rental service , we're here to bridge that gap between aspiration and accessibility.
+        </p>
         <div class="colors">
             <div class="color"></div>
             <div class="color"></div>
         </div>
        
-        <button routerLink="/cars" class="productButton">BOK NOW!</button>
+        <button routerLink="/cars" class="productButton">BOOK NOW!</button>
     </div>
+    
    
 </div>
+
 <div class="gallery">
     <div class="galleryItem">
         <h1 class="galleryTitle">Be Yourself!</h1>
@@ -72,7 +77,7 @@
 </div>
 <div class="newSeason">
     <div class="nsItem">
-        <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        <img src="https://cdn.pixabay.com/photo/2017/05/23/20/08/mustang-2338377_1280.jpg"
             alt="" class="nsImg">
     </div>
     <div class="nsItem">
@@ -84,66 +89,10 @@
         </a>
     </div>
     <div class="nsItem">
-        <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+        <img src="https://cdn.pixabay.com/photo/2017/11/09/01/49/ferrari-458-spider-2932191_640.jpg"
             alt="" class="nsImg">
     </div>
 </div>
-<!-- <footer>
-    <div class="footerLeft">
-        <div class="footerMenu">
-            <h1 class="fMenuTitle">About Us</h1>
-            <ul class="fList">
-                <li class="fListItem">Company</li>
-                <li class="fListItem">Contact</li>
-                <li class="fListItem">Careers</li>
-                <li class="fListItem">car</li>
-                <li class="fListItem">Stores</li>
-            </ul>
-        </div>
-        <div class="footerMenu">
-            <h1 class="fMenuTitle">Useful Links</h1>
-            <ul class="fList">
-                <li class="fListItem">Support</li>
-                <li class="fListItem">Refund</li>
-                <li class="fListItem">FAQ</li>
-                <li class="fListItem">Feedback</li>
-                <li class="fListItem">Stories</li>
-            </ul>
-        </div>
-        <div class="footerMenu">
-            <h1 class="fMenuTitle">Products</h1>
-            <ul class="fList">
-                <li class="fListItem">BMW</li>
-                <li class="fListItem">MERCIDIES</li>
-                <li class="fListItem">TESLA</li>
-                <li class="fListItem">TATA MOTORS</li>
-                <li class="fListItem">MAHINDRA</li>
-            </ul>
-        </div>
-    </div>
-    <div class="footerRight">
-        <div class="footerRightMenu">
-            <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
-            <div class="fMail">
-                <input type="text" placeholder="rajdeep@gmail.com" class="fInput">
-                <button class="fButton">Join!</button>
-            </div>
-        </div>
-        <div class="footerRightMenu">
-            <h1 class="fMenuTitle">Follow Us</h1>
-            <div class="fIcons">
-                <img src="../../assets/img/facebook.png" alt="" class="fIcon">
-                <img src="../../assets/img/twitter.png" alt="" class="fIcon">
-                <img src="../../assets/img/instagram.png" alt="" class="fIcon">
-                <img src="../../assets/img/whatsapp.png" alt="" class="fIcon">
-            </div>
-        </div>
-        <div class="footerRightMenu">
-            <span class="copyright">©️ Rajdeep Thakur All rights reserved 2024.</span>
-        </div>
-    </div>
-</footer> -->
-
 
 <footer class="bg-light text-center text-lg-start text-muted mt-5">
     <section class="text-white d-flex justify-content-around align-items-center p-4 border-bottom bg-secondary">
@@ -160,17 +109,19 @@
   
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2">
             <h6 class="text-uppercase mb-4">Services</h6>
-            <p><a href="" routerLink="/cars">About Us</a></p>
-            <p><a href="/src/app/car-list/" routerLink="/cars">car</a></p>
-            <p><a href="/src/app/home/">Contact Us</a></p>
+            <p><a href="" routerLink="/about">About Us</a></p>
+            <p><a href="" routerLink="/cars">Car</a></p>
+            <p><a href="" routerLink="/contactUs">Contact Us</a></p>
           </div>
   
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
             <h6 class="text-uppercase mb-4">Contact</h6>
             <p><i class="fas fa-home me-2"></i> DLF Hyderabad, IN 50032</p>
-            <!-- <p><i class="fas fa-envelope me-3"></i> info@example.com</p> -->
+            <p><i class="fas fa-envelope me-3"></i> Away4Drive&#64;gmail.com</p> 
+            
             <p><i class="fas fa-phone me-3"></i> +91 7085568255</p>
             <p><i class="fas fa-print me-3"></i> +01 234 567 89</p>
+            
           </div>
         </div>
       </div>

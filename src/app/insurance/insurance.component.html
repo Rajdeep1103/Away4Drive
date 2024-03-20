@@ -1,0 +1,20 @@
+<div class="insurancestyle">
+    <div class="insurance-plans">
+        <h2>Insurance and Protection Plans</h2>
+        <div *ngFor="let plan of insurancePlans" class="plan">
+          <h3>{{ plan.title }}</h3>
+          <p>{{ plan.description }}</p>
+        </div>
+      </div>
+      
+      <div class="fine-info">
+        <h2>What Happens in Case of Fines or Incidents?</h2>
+        <p>In case of fines or incidents during the rental period, the following procedures apply:</p>
+        <ul>
+          <li>Any fines incurred during the rental period are the responsibility of the renter.</li>
+          <li>If the vehicle is damaged due to the renter's negligence or fault, the renter is liable for the repair costs.</li>
+          <li>Insurance coverage may be void in case of reckless driving, driving under the influence of alcohol or drugs, or other violations of the rental agreement.</li>
+          <li>Any damages or fines will be deducted from the security deposit or charged to the renter's credit card.</li>
+        </ul>
+      </div>
+</div>

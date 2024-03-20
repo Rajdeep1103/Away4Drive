@@ -1,0 +1,16 @@
+
+
+<div class="car-description-container">
+    
+    <div>
+        <img [src]="car.imageUrl" alt="Car Image">
+    </div>
+    <div class="car-details">
+    
+      <h3>{{ car.brand }} {{ car.model }}</h3>
+      <p><strong>Year:</strong> {{ car.year }}</p>
+      <p><strong>Color:</strong> {{ car.color }}</p>
+      <p><strong>Price per day:</strong> ${{ car.pricePerDay }}</p>
+      <p>{{ car.description }}</p>
+    </div>
+  </div>

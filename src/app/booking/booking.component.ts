@@ -2,6 +2,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+// import { BookingHistoryComponent } from '../booking-history/booking-history.component';
+//import { BookingHistoryService } from '../services/booking-history.service';
 import { CarService } from '../services/car.service';
 import { Car } from '../Model/car.model';
 
@@ -17,6 +19,7 @@ export class BookingComponent implements OnInit {
   endDate: string = '';
  
   totalPrice: number= 0;
+  bookingService: any;
   
 
   constructor(private route: ActivatedRoute, private carService: CarService, private router: Router) { }
@@ -53,8 +56,10 @@ export class BookingComponent implements OnInit {
     this.calculateTotalPrice();
     
   }
+  
 
   proceedToPayment(): void {
     this.router.navigate(['/payment', this.carId, this.totalPrice, this.startDate, this.endDate]);
   }
+  
 }

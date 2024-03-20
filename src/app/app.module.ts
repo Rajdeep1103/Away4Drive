@@ -11,13 +11,18 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { CarListComponent } from './car-list/car-list.component';
 import { BookingComponent } from './booking/booking.component';
-//import { PaymentComponent } from ''
+
 import { AboutComponent } from './about/about.component';
-//import { FormsModule } from '@angular/forms';
+
 import { PaymentComponent } from './payment/payment.component';
 import { NgToastModule } from 'ng-angular-popup';
-//import { CarSearchComponent } from './car-search/car-search.component';
-
+import { BookingHistoryComponent } from './booking-history/booking-history.component';
+import { CarDetailsComponent } from './car-details/car-details.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { InsuranceComponent } from './insurance/insurance.component';
+import { VehicleInspectionComponent } from './vehicle-inspection/vehicle-inspection.component';
+import { VehicleSelectionComponent } from './vehicle-selection/vehicle-selection.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +35,13 @@ import { NgToastModule } from 'ng-angular-popup';
     BookingComponent,
     PaymentComponent,
     AboutComponent,
+    BookingHistoryComponent,
+    CarDetailsComponent,
+    NotFoundComponent,
+    InsuranceComponent,
+    VehicleInspectionComponent,
+    VehicleSelectionComponent,
+    ContactUsComponent    
   
   
 

@@ -16,27 +16,42 @@ import { NgToastService } from 'ng-angular-popup';
 })
 export class LoginComponent  implements OnInit{
  
-  // lock = faLock;
-  // eye = faEyeSlash;
-  // user = faUser;
+ 
  
 type:string ="password";
 isText: boolean =false;
 loginForm! : FormGroup;
 toast = inject(NgToastService)
 status:boolean = false;
+  authService: any;
+
+
  
-  constructor(private fb: FormBuilder, private auth: AuthService, private router:Router) {}
+  constructor(private fb: FormBuilder, private auth: AuthService, private router:Router ) {}
   ngOnInit(): void {
     this.loginForm=this.fb.group({
       username: ['',Validators.required],
-      password: ['',Validators.required],
-      email:['',Validators.required]
+      password: ['',[Validators.required,Validators.minLength(6),Validators.maxLength(15)]],
+      email:['',[Validators.required,Validators.email]]
     });
+  }
+  get username()
+  {
+    return this.username('username')
+  }
+
+  get email()
+  {
+    return this.email('email')
+  }
+
+  get password()
+  {
+    return this.password('password')
   }
   hideshowPass(){
     this.isText =!this.isText;
-    //this.isText ? this.eye = faEyeSlash : this.eye = faEyeSlash;
+    
     this.isText ? this.type = "text" : this.type = "password";
  
   }
@@ -47,6 +62,7 @@ status:boolean = false;
       .subscribe({
         next: (res)=>{
           // alert(res.message)
+          
           this.toast.success({
             detail:"Login Successful",
             summary:"Successful",
@@ -54,14 +70,20 @@ status:boolean = false;
             position:"topCenter"
           })
           this.status = true; 
-          this.loginForm.reset();
+          this.auth.setUserLoginStatus(true);
+          this.loginForm.reset(); 
           this.router.navigate(['/home'])
 
-          //exp
-          // this.navbarService.setNavbarVisibility(true);
+        
         },
         error:(err)=>{
-          alert(err?.error.message)
+          // alert(err?.error.message)
+          this.toast.error({
+            detail:err.error.message,
+            summary:"Enter Correct Detail",
+            duration:3000,
+            position:"topCenter"
+          })
         }
       })
      //send object to datyabase
@@ -72,6 +94,4 @@ status:boolean = false;
         alert("Your form is invalid")
     }
   }
- 
- 
 }

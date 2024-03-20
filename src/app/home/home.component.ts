@@ -13,4 +13,19 @@ export class HomeComponent {
     this.router.navigate(['/home'])
    }
 
+   goToInsurance(){
+    this.router.navigate(['/insurance']);
+   }
+   
+   goTovehicleInspection(){
+    this.router.navigate(['/vehicleInspection']);
+   }
+
+   goTovehicleSelection(){
+    this.router.navigate(['/vehicleSelction']);
+   }
+
+   goTocontactUs(){
+    this.router.navigate(['/contactUs']);
+   }
 }

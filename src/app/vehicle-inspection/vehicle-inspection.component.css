@@ -1,0 +1,75 @@
+/* Styles for the vehicle inspection component container */
+.vehicle-inspection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for vehicle inspection details */
+  .inspection-details {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 50px;
+  }
+  
+  .detail {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .detail:hover {
+    transform: translateY(-5px);
+  }
+  
+  .detail h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .detail p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Styles for conditions reporting */
+  .conditions-reporting {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .conditions-reporting h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .conditions-reporting p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .conditions-reporting ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .detail, .conditions-reporting {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

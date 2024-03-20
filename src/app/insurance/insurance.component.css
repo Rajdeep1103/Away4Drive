@@ -1,0 +1,219 @@
+/* Styles for insurance plans */
+/* .insurance-plans {
+    margin-bottom: 30px;
+  }
+  
+  .plan {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  .plan h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .plan p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+   */
+  /* Styles for fine information */
+  /* .fine-info {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 30px;
+  }
+  
+  .fine-info h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .fine-info p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .fine-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  } */
+  
+  /* Hover effect for insurance plans */
+  /* .plan:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  } */
+/* new */
+  /* Styles for insurance component container */
+/* .insurance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  } */
+  
+  /* Styles for insurance plans */
+  /* .insurance-plans {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 50px;
+  }
+  
+  .plan {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .plan:hover {
+    transform: translateY(-5px);
+  }
+  
+  .plan h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .plan p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+   */
+  /* Styles for fine information */
+  /* .fine-info {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .fine-info h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .fine-info p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .fine-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  } */
+  
+  /* Media query for responsive design */
+  /* @media (max-width: 768px) {
+    .plan, .fine-info {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+   */
+
+
+   /* Styles for the body */
+.insurancestyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  /* Styles for the insurance component container */
+  .insurance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for insurance plans */
+  .insurance-plans {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 50px;
+  }
+  
+  .plan {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .plan:hover {
+    transform: translateY(-5px);
+  }
+  
+  .plan h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .plan p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Styles for fine information */
+  .fine-info {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .fine-info h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .fine-info p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .fine-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .plan, .fine-info {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  

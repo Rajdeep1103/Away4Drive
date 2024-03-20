@@ -1,0 +1,77 @@
+/* Styles for the vehicle selection component container */
+.vehicle-selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vehicle-selection-container h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Styles for luxury vehicle */
+  .vehicle {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vehicle-info {
+    text-align: left;
+    margin-right: 20px;
+  }
+  
+  .vehicle-info h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .vehicle-info p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .vehicle-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .vehicle-info .availability {
+    font-weight: bold;
+    color: green;
+  }
+  
+  .vehicle-images {
+    display: flex;
+    align-items: center;
+  }
+  
+  .vehicle-images img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Hover effect for images */
+  .vehicle-images img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
+  
